@@ -1,5 +1,7 @@
 "use client";
 
+
+import NavBar from "../../components/NavBar";
 import React, { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -15,6 +17,10 @@ const BookingPage = () => {
 
   return (
     <div className="bg-gray-100 min-h-screen">
+      <div className="bg-black">
+
+      <NavBar />
+      </div>
       <div className="h-10"></div>
       <div className="booking-container">
         <h1 className="text-3xl text-black font-bold text-center my-6">

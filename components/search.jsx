@@ -1,5 +1,5 @@
 "use client";
-import NavBar from "../components/NavBar";
+import NavBar from "./NavBar";
 import { BiSearchAlt } from "react-icons/bi";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -71,14 +71,6 @@ export default function Search() {
               </select>
 
               <BiSearchAlt className="cursor-pointer w-10 h-10" onClick={handleSearch} />
-            </div>
-
-            <h5 className="text-white text-3xl text-center mt-28 z-10">Popular Searches</h5>
-            {/* This container has less padding/margins to ensure it's visible */}
-            <div className="flex flex-row justify-center mt-10 gap-3 z-10">
-              <img src="/12.jpg" className="w-1/4" alt="popular search 1" />
-              <img src="/12.jpg" className="w-1/4" alt="popular search 2" />
-              <img src="/12.jpg" className="w-1/4" alt="popular search 3" />
             </div>
           </div>
         </main>

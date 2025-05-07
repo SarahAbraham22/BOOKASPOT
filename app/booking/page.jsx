@@ -1,8 +1,7 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
+import Navbar from "../../components/Navbar_vendor"
 import BookingCalendar from "./BookingCalendar";
-import Navbar from "../../components/Navbar_vendor";
 import "./booking.css";
 
 const BookingPage = () => {
@@ -10,12 +9,15 @@ const BookingPage = () => {
     <div className="bg-gray-100 min-h-screen">
       {/* Full-width Navbar at top */}
       <Navbar />
-    <div className="booking-container">
-      <h1 className="text-3xl text-black font-bold text-center my-6">Book Your Spot</h1>
-      <BookingCalendar />
+      <div className="booking-container max-w-6xl mx-auto px-4 py-8">
+        <h1 className="text-3xl text-black font-bold text-center my-6">Manage Your Bookings</h1>
+        <p className="text-center text-gray-600 mb-8">
+          View and manage all your venue bookings. Click on a date to block/unblock dates or view booking details.
+        </p>
+        <BookingCalendar />
+      </div>
     </div>
-    </div>
-  );
-};
+  )
+}
 
-export default BookingPage;
+export default BookingPage
