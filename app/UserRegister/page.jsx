@@ -49,7 +49,7 @@ export default function UserRegister() {
         setEmail("");
         setPhone("");
         setPassword("");
-        router.push("/loginform");
+        router.push("/UserLogin");
       } else {
         setError("Customer registration failed.");
       }

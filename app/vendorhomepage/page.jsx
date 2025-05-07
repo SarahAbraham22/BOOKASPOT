@@ -8,7 +8,7 @@ const VendorWelcome = () => {
   const [text, setText] = useState("");
   const [showOptions, setShowOptions] = useState(false);
   const router = useRouter();
-  const intervalRef = useRef(null); // ✅ No TypeScript typing
+  const intervalRef = useRef(null);
 
   const fullMessage = `Weelcome to BookASpot!
 We're excited to have you onboard as a vendor.
